@@ -1,0 +1,27 @@
+nav {
+    position: relative;
+    height: 100px;
+}
+
+nav ul li {
+    position: absolute;
+    background-color: antiquewhite;
+}
+
+nav ul .left:hover aside {
+    display: block;
+}
+
+nav ul .left a {
+    position: absolute;
+    display: block;
+    height: 90px;
+    line-height: 90px;
+    font-size: 20px;
+}
+
+nav ul .left a img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}

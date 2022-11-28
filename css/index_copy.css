@@ -1,0 +1,52 @@
+meta {}
+
+title {}
+
+link {}
+
+undefined {}
+
+div.videobox {
+    header {
+        div.con {
+            undefined {}
+            section.left_section {}
+            section.right {
+                undefined {}
+                a {}
+            }
+        }
+        undefined {}
+        nav {
+            ul {
+                li.left {
+                    a {
+                        img.select {}
+                        span {}
+                        undefined {}
+                    }
+                    undefined {}
+                    aside {
+                        undefined {}
+                        span {}
+                        ol.zuo {}
+                    }
+                }
+                li.center {}
+                li.right {}
+            }
+        }
+    }
+    undefined {}
+    video {}
+}
+
+div.new {}
+
+div.try {}
+
+div.text {}
+
+div.form {}
+
+div.footer {}

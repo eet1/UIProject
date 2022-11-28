@@ -1,0 +1,402 @@
+/* 初始化公共样式 */
+
+* {
+    margin: 0;
+    /* padding: 0;
+    border: 0;
+    list-style: none; */
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 字体从左到右依次执行(有哪个用哪个) */
+
+body {
+    /* font-family: "微软雅黑", "宋体", "楷体";
+    font-size: 14px;
+    height: 100%;
+    width: 100%; */
+    position: relative;
+}
+
+
+/* a标签的默认样式 */
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+
+/* 鼠标滑过时 */
+
+a:hover {
+    color: #fff;
+}
+
+
+/* 去掉input和textarea的默认蓝色边框 */
+
+input,
+textarea {
+    outline: none;
+}
+
+.videobox {
+    width: 100%;
+    height: 100%;
+}
+
+.videobox header {
+    height: 13%;
+    width: 100%;
+    background-color: #fff;
+    /* opacity透明度:它不仅对颜色有效，对图像或者页面中其它的元素 */
+    /* 其中 number 为一个 0~1 之间的浮点数  (0 表示完全透明，1 表示完全不透明) */
+    opacity: 0.4;
+    /* 只设置背景颜色透明度 */
+    /* background-color: rgba(255, 255, 255, 0.5) */
+    position: fixed;
+}
+
+.videobox header .left {
+    height: 100%;
+    width: 20%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+}
+
+.videobox header .left .two:hover aside {
+    display: block;
+    border-style: solid;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 400px;
+    height: 300px;
+    position: absolute;
+}
+
+aside {
+    width: 400px;
+    height: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+.videobox header .left aside li {
+    float: left;
+    font-size: 20px;
+    margin: 20px;
+    background-color: rgb(190, 167, 223);
+    border: solid;
+    border-color: rgb(190, 167, 223);
+    width: 250px;
+    height: 50px;
+}
+
+.videobox header .left aside li a {
+    font-family: "楷体";
+    color: black;
+}
+
+.videobox header .left .one {
+    float: left;
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left: 25%;
+}
+
+.videobox header .left .one img {
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.videobox header .left .two {
+    height: 100%;
+    width: 33%;
+    float: left;
+    position: absolute;
+    color: black;
+    top: 32%;
+    left: 30%;
+    align-items: center;
+    text-align: center;
+    font-size: 19px;
+}
+
+.videobox header .left .three {
+    float: left;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    left: 62%;
+}
+
+.videobox header .left .three img {
+    float: left;
+    height: 10px;
+    width: 10px;
+}
+
+.videobox header .middle {
+    height: 100%;
+    width: 40%;
+    /* background-color: purple; */
+    float: left;
+    position: relative;
+}
+
+.videobox header .middle form {
+    height: 30px;
+    width: 350px;
+    /* position:absolute之后再设定top,left这类属性 */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    float: left;
+    color: #fff;
+}
+
+.videobox header .middle img {
+    float: left;
+    left: 92%;
+    position: absolute;
+    top: 25%;
+    height: 20px;
+    width: 20px;
+    color: #fff;
+}
+
+
+/* 
+    问题:为什么右边内容不显示?
+    难道是由于float不浮动的问题吗
+    或者是position的问题
+    解决了?? 我重新写了选择器的名字就好了!!明明和之前一样啊,只是重新写了一下
+ */
+
+.videobox header .right {
+    float: right;
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(8, 0, 255); */
+    position: relative;
+}
+
+.videobox header .right .right-left {
+    float: left;
+    width: 70%;
+    height: 100%;
+    left: 20%;
+    /* background-color: rgb(29, 136, 79); */
+    position: absolute;
+}
+
+.videobox header .right .five {
+    float: left;
+    top: 30%;
+    position: absolute;
+    left: 5%;
+    /* color: #fff; */
+}
+
+.videobox header .right .five a {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+
+.videobox header .right .six {
+    float: left;
+    top: 30%;
+    position: absolute;
+    left: 17%;
+    /* left: 10%; */
+    color: #fff;
+}
+
+.videobox header .right .six a {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+
+.videobox header .right .one {
+    top: 34%;
+    float: left;
+    /* 相对父元素进行定位 */
+    position: absolute;
+    color: #fff;
+    left: 30%;
+}
+
+.videobox header .right .one img {
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.videobox header .right .two {
+    float: left;
+    position: absolute;
+    top: 34%;
+    left: 42%;
+    color: #fff;
+}
+
+.videobox header .right .two img {
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.videobox header .right .three {
+    float: left;
+    position: absolute;
+    top: 32%;
+    left: 54%;
+    color: #fff;
+}
+
+.videobox header .right .three img {
+    float: left;
+    height: 24px;
+    width: 24px;
+}
+
+.videobox header .right .four {
+    float: left;
+    position: absolute;
+    top: 33%;
+    left: 66%;
+    color: #fff;
+}
+
+.videobox header .right .four img {
+    float: left;
+    height: 23px;
+    width: 23px;
+}
+
+.videobox header .right .right-right {
+    float: left;
+    position: absolute;
+    left: 78%;
+    background-attachment: #fff;
+    /* text-align: center; */
+    top: 35%;
+}
+
+.videobox video {
+    width: 100%;
+    height: 100%;
+    /* CSS object-fit 属性用于规定应如何调整 <img> 或 <video> 的大小来适应其容器。 */
+    object-fit: fill;
+    /* min-width: 当浏览器页面缩小时,设置最小显示宽度,小于这个值时页面下方出现横条可以拉动(缩小页面时,使页面的布局不变) */
+    min-width: 1280px;
+    /* 定位 */
+    position: absolute;
+    /* 设置位置,设置top,left,transform定位元素居中公式 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Z-index可被用于将在一个元素放置于另一元素之后 */
+    z-index: -9999;
+}
+
+.videobox header aside {
+    display: none;
+    margin: 10px, 10px, 10px, 20px;
+    width: 300px;
+    height: 300px;
+    list-style: none;
+}
+
+
+/* .videobox .pop {
+    position: absolute;
+    top: 70%;
+    width: 1200px;
+    height: 200px;
+    float: left;
+    left: 135px;
+    color: #fff;
+    background-color: rgb(49, 36, 187);
+} */
+
+
+/* 
+.videobox .pop ul {
+    float: left;
+    width: 1000px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(207, 226, 62);
+} */
+
+
+/* 
+.videobox .pop ul li {
+    background-color: red;
+    font-weight: bold;
+    position: absolute;
+    float: left;
+    top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 65px;
+} */
+
+
+/* 
+.videobox .pop .left {
+    float: left;
+    position: absolute;
+    top: 25%;
+    left: -1980px;
+    width: 25%;
+    height: 50%;
+    background-color: rgb(132, 208, 146);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+} */
+
+
+/* 
+.videobox .pop .right {
+    position: absolute;
+    top: 25%;
+    left: 1980px;
+    width: 25%;
+    height: 50%;
+    background-color: rgb(132, 208, 146);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+body:hover .videobox .pop .left {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    opacity: 0.8;
+}
+
+body:hover .videobox .pop .right {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    opacity: 0.8;
+} */

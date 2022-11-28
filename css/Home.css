@@ -1,0 +1,163 @@
+ * {
+     margin: 0;
+     height: 100%;
+     width: 100%;
+ }
+ 
+ body {
+     position: relative;
+ }
+ 
+ .content #video_background {
+     position: absolute;
+     object-fit: fill;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -9999;
+ }
+ 
+ .header {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .header .navigator {
+     height: 14%;
+     width: 100%;
+     background-color: white;
+     opacity: 0.4;
+ }
+ 
+ .header .navigator .left {
+     height: 100%;
+     width: 20%;
+     /* background-color: green; */
+     float: left;
+     position: relative;
+ }
+ 
+ .header .navigator .left #one {
+     float: left;
+     position: absolute;
+     color: white;
+     top: 30%;
+     left: 25%;
+ }
+ 
+ .header .navigator .left #one img {
+     float: left;
+     height: 20px;
+     width: 20px;
+ }
+ 
+ .header .navigator .left #two {
+     float: left;
+     position: absolute;
+     color: black;
+     font-size: 19px;
+     left: 30%;
+     height: 100%;
+     width: 33%;
+     align-items: center;
+     text-align: center;
+     top: 26%;
+ }
+ 
+ .header .navigator .left #three {
+     float: left;
+     position: absolute;
+     color: #fff;
+     top: 34%;
+     left: 60%;
+ }
+ 
+ .header .navigator .left #three img {
+     float: left;
+     height: 10px;
+     width: 10px;
+ }
+ 
+ .header .navigator .middle {
+     height: 100%;
+     width: 50%;
+     /* background-color: purple; */
+     float: left;
+ }
+ 
+ .header .navigator .right {
+     height: 100%;
+     width: 30%;
+     /* background-color: brown; */
+     float: right;
+     position: relative;
+ }
+ 
+ .header .navigator .right #one {
+     float: left;
+     position: absolute;
+     color: white;
+     top: 34%;
+     left: 40%;
+ }
+ 
+ .header .navigator .right #two {
+     float: left;
+     position: absolute;
+     color: white;
+     top: 34%;
+     left: 50%;
+ }
+ 
+ .header .navigator .right #three {
+     float: left;
+     position: absolute;
+     color: white;
+     top: 34%;
+     left: 60%;
+ }
+ 
+ .header .navigator .right #four {
+     float: left;
+     position: absolute;
+     color: white;
+     top: 34%;
+     left: 70%;
+ }
+ 
+ .header .navigator .right #one img {
+     float: left;
+     height: 20px;
+     width: 20px;
+ }
+ 
+ .header .navigator .right #two img {
+     float: left;
+     height: 20px;
+     width: 20px;
+ }
+ 
+ .header .navigator .right #three img {
+     float: left;
+     height: 20px;
+     width: 20px;
+ }
+ 
+ .header .navigator .right #four img {
+     float: left;
+     height: 20px;
+     width: 20px;
+ }
+ 
+ .content {
+     width: 0;
+     height: 0;
+ }
+ 
+ .footer {
+     width: 0;
+     height: 0;
+ }
